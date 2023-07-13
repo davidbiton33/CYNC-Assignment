@@ -59,7 +59,7 @@ microservice b :
 3. Start the microservices and the client application:
    - Run `npm start` in the client directory to start the client app.
    - Run `npm start` in the microservice a directory to start the microservice a.
-   - Run `npm start` in the microservice b directory to start the microservice b.
+   - Run `npm run dev` in the microservice b directory to start the microservice b.
 4. Access the client application:
    - Open your browser and navigate to `http://localhost:5173` to access the client application.
 
