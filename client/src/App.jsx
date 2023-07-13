@@ -24,7 +24,7 @@ function App() {
     socket.on("connect", () => {
       console.log("client connect to socket (microservice A)");
     });
-    
+      
     socket.on("send-response-to-the-client", (response) => {
       setResponse(response);
       setMessageValue("");
