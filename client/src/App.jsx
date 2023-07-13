@@ -24,7 +24,7 @@ function App() {
     socket.on("connect", () => {
       console.log("client connect to socket (microservice A)");
     });
-      
+
     socket.on("send-response-to-the-client", (response) => {
       setResponse(response);
       setMessageValue("");
@@ -45,7 +45,7 @@ function App() {
           }}
         />
         <button onClick={handleMessageSend}>
-          {loading ? "loading..." : "save"}
+          {loading ? <span className="loader"></span> : "save"}
         </button>
       </div>
       <div>{response ? <span>{response}</span> : null}</div>
